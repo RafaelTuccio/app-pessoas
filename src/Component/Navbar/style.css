@@ -1,0 +1,25 @@
+.navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: #9fa8da;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.ul-navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.li-navbar{
+    margin: 0 10px;
+}

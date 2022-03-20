@@ -3,6 +3,7 @@ table{
     margin: 0 5%;
     border-collapse: collapse;
     color: aliceblue;
+    font-size: 14px;
 }
 
 tr{

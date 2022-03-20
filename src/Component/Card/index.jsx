@@ -24,7 +24,6 @@ const Card = (props) => {
         if(active){
             setCssClass('visible')
             setUser(data)
-            //const formatedDate = formatDate(user?.dob?.date ,user?.location?.country)
             let date = user?.dob?.date
             let country = user?.location?.country
             if(date && country){

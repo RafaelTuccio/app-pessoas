@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Component/Navbar';
 import Container from './Component/Container'
+import Footer from './Component/Footer'
 function App() {
 
   return (
@@ -9,6 +10,7 @@ function App() {
       <Container>
         Ola mundo!!
       </Container>
+      <Footer />
     </>
   );
 }

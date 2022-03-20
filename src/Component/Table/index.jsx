@@ -1,6 +1,7 @@
 import './style.css'
 
 const Table = (props) => {
+    const { users } = props
 
     return (
         <table>
@@ -32,6 +33,17 @@ const Table = (props) => {
                         <td>(11) 99950-2222</td>
                         <td>perfil</td>
                     </tr>
+                    {
+                        users.map((user) => {
+                            return(
+                                <tr key={user.id.value}>
+                                    <td>{user.name.first}</td>
+                                    <td>{user.email}</td>
+                                    <td>{user.cell}</td>
+                                </tr>
+                            )
+                        })
+                    }
                 </tbody>
             </table>
         </table>

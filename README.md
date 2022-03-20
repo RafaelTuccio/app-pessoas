@@ -9,3 +9,5 @@
 - [x] Criar o Component Footer
 - [x] Melhorar o README.md
 - [x] Criar o Component Table
+- [x] Criar o Component Title
+- [x] Criar o Pagina de Usuários

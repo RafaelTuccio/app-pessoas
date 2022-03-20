@@ -15,24 +15,6 @@ const Table = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Rafael Tuccio</td>
-                        <td>rafael@gmail.com</td>
-                        <td>(11) 99950-2222</td>
-                        <td>perfil</td>
-                    </tr>
-                    <tr>
-                        <td>Rafael Tuccio</td>
-                        <td>rafael@gmail.com</td>
-                        <td>(11) 99950-2222</td>
-                        <td>perfil</td>
-                    </tr>
-                    <tr>
-                        <td>Rafael Tuccio</td>
-                        <td>rafael@gmail.com</td>
-                        <td>(11) 99950-2222</td>
-                        <td>perfil</td>
-                    </tr>
                     {
                         users.map((user) => {
                             return(
@@ -40,6 +22,7 @@ const Table = (props) => {
                                     <td>{`${user.name.first} ${user.name.last}`}</td>
                                     <td>{user.email}</td>
                                     <td>{user.cell}</td>
+                                    <td><i class="pointer material-icons">assignment_ind</i></td>
                                 </tr>
                             )
                         })

@@ -13,4 +13,6 @@
 - [x] Criar o Pagina de Usuários
 - [x] Testar o Componente Table com dados mock
 - [x] Criar comunicação com api
-
+- [x] Adicionar link de icones ao projeto
+- [x] Adicionar icone de profile nas table
+- [x] Estilizar o cursos no icone das table

@@ -2,8 +2,10 @@
 
 ## Histórico de criação 
 
-### - Criar o projeto com create-react-app
-### - Adicionar o axios ao projeto
-### - Criar o Component Navbar
-### - Criar o Component Container
-### - Criar o Component Footer
+- [x] Criar o projeto com create-react-app
+- [x] Adicionar o axios ao projeto
+- [x] Criar o Component Navbar
+- [x] Criar o Component Container
+- [x] Criar o Component Footer
+- [x] Melhorar o README.md
+- [ ] Criar o Component Table

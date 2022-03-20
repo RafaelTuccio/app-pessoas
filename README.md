@@ -11,3 +11,6 @@
 - [x] Criar o Component Table
 - [x] Criar o Component Title
 - [x] Criar o Pagina de Usuários
+- [x] Testar o Componente Table com dados mock
+- [x] Criar comunicação com api
+

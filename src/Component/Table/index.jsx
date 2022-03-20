@@ -37,7 +37,7 @@ const Table = (props) => {
                         users.map((user) => {
                             return(
                                 <tr key={user.id.value}>
-                                    <td>{user.name.first}</td>
+                                    <td>{`${user.name.first} ${user.name.last}`}</td>
                                     <td>{user.email}</td>
                                     <td>{user.cell}</td>
                                 </tr>

@@ -1,10 +1,31 @@
 import './style.css'
+import Card from '../Card'
+import { useState } from 'react'
 
 const Table = (props) => {
     const { users } = props
+    const [active, setActive] = useState(false)
+    const [data, setData] = useState()
+
+    const closeCard = () => {
+        if (active) {
+            setActive(false)
+        } else {
+            setActive(true)
+        }
+    }
+
+    const openCard = (user) => {
+        if (!active) {
+            setActive(true)
+            setData(user)
+        }
+    }
+
+
 
     return (
-        <table>
+        <div>
             <table>
                 <thead>
                     <tr>
@@ -16,20 +37,25 @@ const Table = (props) => {
                 </thead>
                 <tbody>
                     {
-                        users.map((user) => {
-                            return(
-                                <tr key={user.id.value}>
+                        users.map((user, index) => {
+                            return (
+                                <tr key={index}>
                                     <td>{`${user.name.first} ${user.name.last}`}</td>
                                     <td>{user.email}</td>
                                     <td>{user.cell}</td>
-                                    <td><i class="pointer material-icons">assignment_ind</i></td>
+                                    <td>
+                                        <i className="pointer material-icons"
+                                            onClick={() => openCard(user)}
+                                        >assignment_ind</i>
+                                    </td>
                                 </tr>
                             )
                         })
                     }
                 </tbody>
             </table>
-        </table>
+            <Card active={active} closeCard={closeCard} data={data} />
+        </div>
     )
 }
 

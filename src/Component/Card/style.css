@@ -1,0 +1,95 @@
+.card-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.card{
+    position: relative;
+    width: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+
+.title-card{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-card span{
+    padding-left: 20px;
+}
+.title-card i{
+    padding-right: 20px;
+}
+
+.card-intern{
+    max-width: 400px;
+    height: 680px;
+    margin: 30px 10px;
+    background: #fff;
+    padding: 20px 15px;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    
+} 
+
+.imgBx{
+    border-radius: 4px;
+    width: 260px;
+    height: 260px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    background: #e8eaf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.imgBx img{
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.card-intern .content{
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    margin-top: 70px;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    background: #e8eaf6;
+}
+
+
+.li-card{
+    display: flex;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.li-card span{
+    margin-left: 20px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.invisible{
+    display: none;
+}

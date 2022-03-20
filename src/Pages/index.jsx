@@ -10,7 +10,7 @@ const User = (props) => {
 
     const getUsers = async () => {
         try{
-            const users = await api.get('/?results=500')
+            const users = await api.get('/?results=13')
             setUsers(users.data.results)
         }catch(e){
             console.error(e)

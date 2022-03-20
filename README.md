@@ -19,3 +19,5 @@
 - [x] Criar Componente Card
 - [x] Criar funcionalidade que permite abrir o card individual de cada usuario
 - [x] Criar formatação para data
+- [x] Criar componet Pagination
+- [x] Adicionar a funcionalidade Paginação no projeto

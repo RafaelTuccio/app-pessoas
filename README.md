@@ -16,3 +16,6 @@
 - [x] Adicionar link de icones ao projeto
 - [x] Adicionar icone de profile nas table
 - [x] Estilizar o cursos no icone das table
+- [x] Criar Componente Card
+- [x] Criar funcionalidade que permite abrir o card individual de cada usuario
+- [x] Criar formatação para data

@@ -1,20 +1,42 @@
 import { useEffect, useState } from 'react'
 import './style.css'
+
 const Card = (props) => {
     const [cssClass, setCssClass] = useState('')
     const { active, closeCard, data } = props
     const [user, setUser] = useState({})
+    const [date, setDate] = useState('')
+
+    const formatDate = (date, country) => {
+        const day = date.substring(8, 10)
+        const mouth = date.substring(5, 7)
+        const year = date.substring(0, 4)
+        if(country === "Brazil"){
+            return `${day}/${mouth}/${year}`
+        }else{
+            return `${mouth}/${day}/${year}`
+        }
+    }
+
 
     useEffect(() => {
         
         if(active){
             setCssClass('visible')
             setUser(data)
+            //const formatedDate = formatDate(user?.dob?.date ,user?.location?.country)
+            let date = user?.dob?.date
+            let country = user?.location?.country
+            if(date && country){
+                let formatedDate = formatDate(date, country)
+                setDate(formatedDate)
+            }
+            
         }else{
             setCssClass('invisible')
             setUser('')
         }
-        console.log(user)
+        
     }, [active, cssClass, user, data])
     
     return(
@@ -46,7 +68,7 @@ const Card = (props) => {
                             </li>
                             <li className="li-card">
                                 <i className="material-icons">cake</i>
-                                <span>{user?.dob?.date}</span>
+                                <span>{date}</span>
                             </li>
                             <li className="li-card">
                                 <i className="material-icons">call</i>

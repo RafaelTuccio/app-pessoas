@@ -8,4 +8,4 @@
 - [x] Criar o Component Container
 - [x] Criar o Component Footer
 - [x] Melhorar o README.md
-- [ ] Criar o Component Table
+- [x] Criar o Component Table

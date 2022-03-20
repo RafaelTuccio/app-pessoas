@@ -1,0 +1,25 @@
+table{
+    width: 90%;
+    margin: 0 5%;
+    border-collapse: collapse;
+    color: aliceblue;
+}
+
+tr{
+    text-align: center;
+    border-top: 1px solid black ;
+    border-collapse: colapse;
+}
+
+tr:hover{
+    background: rgba(0, 0, 0, 0.2)
+}
+
+th{
+    padding: 10px 50px; 
+    border-collapse: colapse;
+}
+
+td{
+    padding: 10px 20px; 
+}
